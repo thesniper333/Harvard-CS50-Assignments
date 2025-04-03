@@ -1,0 +1,24 @@
+   reversed5000.txt             random5000.txt           sorted5000.txt
+   sort1 = 0m0.072s             sort1 = 0m0.076s         sort1 = 0m0.059s
+   sort2 = 0m0.038s             sort2 = 0m0.031s         sort2 = 0m0.029s
+   sort3 = 0m0.048s             sort3 = 0m0.047s         sort3 = 0m0.047s
+   // sort2 = merge sort, sort3 = selection sort, sort1 = bubble sort
+
+
+   reversed10000.txt            random10000.txt          sorted10000.txt
+   sort1 = 0m0.262s             Sort1 = 0m0.283s         sort1 = 0m0.093s
+   sort2 = 0m0.086s             Sort2 = 0m0.085s         sort2 = 0m0.071s
+   sort3 = 0m0.157s             Sort3 = 0m0.131s         sort3 = 0m0.137s
+
+   //sort2 = merge sort, sort3 = selection sort, sort1 = bubble sort
+
+   reversed50000.txt            random50000.txt          sorted50000.txt
+   sort1 = 0m5.028s             sort1 = 0m5.596s         sort1 = 0m0.458s
+   sort2 = 0m0.472s             sort2 = 0m0.549s         sort2 = 0m0.516s
+   sort3 = 0m2.509s             sort3 = 0m2.412s         sort3 = 0m2.306s
+
+   // //sort2 = merge sort, sort3 = selection sort, sort1 = bubble sort
+
+
+
+

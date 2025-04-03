@@ -1,0 +1,20 @@
+sort1 uses: Bubble sort
+
+How do you know?: If analyse the runtime of sort1 for each of the 9 files, we can observe that for reversed.txt runtime is higher than sorted.txt (best case)
+                   which depicts that sort1 is using bubble sort which has runtime O(n^2) and omega(n) for the best and worst case respectively and also for random.txt
+                   runtime is in between the runtime of reversed.txt and sorted.txt which may conclude that sort1 uses bubble sort.
+
+sort2 uses: Merge sort
+
+How do you know?: If analyse the runtime of sort2 for each of the 9 files, we can observe that for reversed.txts runtime is close to sorted.txts (Best case)
+                  and also for random.txts runtime is almost similar to reversed.txts and sorted.txts and relatively less than of sort3 (Selection sort) but higher than
+                  sorted.txt (best case) of sort1(bubble sort) which has the runtime omega(n) for the best case which may conclude that runtime of sort2 is in order
+                  of O(nlog(n))(worst case) and omega(nlog(n)) or we can say theta (nlog(n)) which is for merge sort.
+
+
+sort3 uses: Selection sort
+
+How do you know?: If analyse the runtime of sort3 for each of the 9 files, we can observe that for reversed.txts runtime is close to sorted.txts (Best case)
+                  and also for random.txts runtime is almost similar to reversed.txts and sorted.txts which may conclude that runtime of sort1 is in order
+                  of O(n^2)(worst case) and omega(n^2) or we can say theta (n^2) which is for selection sort.
+

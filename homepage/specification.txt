@@ -1,0 +1,58 @@
+## HTML Tags##
+1.link
+2.script
+3.div
+4.a
+5.p
+6.br
+7.hr
+8.span
+9.section
+10.header
+11.nav
+
+## CSS Properties ##
+
+box-sizing
+margin
+padding
+width
+height
+border-bottom
+position
+top
+left
+background-image
+background-repeat
+background-attachment
+background-color
+background-position
+background
+color
+font-size
+font-weight
+font
+text-decoration
+backdrop-filter
+-webkit-backdrop-filter
+display
+align-items
+justify-content
+z-index
+
+##Bootstrap##
+container-fluid class is used here which is used to align the elements inside the this class,
+it will stretched to the width of the screen leaving some margin as set in the bootstrap.
+
+## Javascript ##
+It is used to display the welcome message "Hi" whenever the homepage is loaded with a blur effect in the entire screen for 3 seconds
+which automatically disappear.
+
+Note: Javascript code is from openAI.
+
+
+
+
+
+
+

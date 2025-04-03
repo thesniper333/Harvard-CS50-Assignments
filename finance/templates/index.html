@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Portfolio
+{% endblock %}
+
+{% block main %}
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th class="text-start">Symbol</th>
+                <th class="text-end">Shares</th>
+                <th class="text-end">Price</th>
+                <th class="text-end">TOTAL</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            {% for stocks in purchase %}
+                {% if stocks["Shares"] != 0 %}
+                    <tr>
+                        <td class="text-start">{{ stocks["Symbol"] }}</td>
+                        <td class="text-end">{{ stocks["Shares"] }}</td>
+                        <td class="text-end">{{ usd(lookup(stocks["Symbol"])["price"]) }}</td>
+                        <td class="text-end">{{ usd(stocks["Shares"] * lookup(stocks["Symbol"])["price"]) }}</td>
+                    </tr>
+                {% endif %}
+
+            {% endfor %}
+
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <td class="border-0 fw-bold text-end" colspan="3">Cash</td>
+                <td class="border-0 text-end">{{ usd(cash_left) }}</td>
+            </tr>
+            <tr>
+                <td class="border-0 fw-bold text-end" colspan="3">TOTAL</td>
+                <td class="border-0 w-bold text-end"> {{ usd(current_value + cash_left) }}</td>
+            </tr>
+        </tfoot>
+    </table>
+{% endblock %}

@@ -1,0 +1,2 @@
+We can determine the aura by calculating the average valuve of danceability, valence, and energy. On the basis of this average value of genre, we can comment about the aura.
+For instance, if valence is greatest among the rest of the three then aura must be valence.

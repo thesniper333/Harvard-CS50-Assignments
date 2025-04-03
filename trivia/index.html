@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                let correct = document.querySelector(".correct");
+                correct.addEventListener("click", function() {
+                    correct.style.backgroundColor = "green";
+                    document.querySelector('#result').innerHTML = 'Correct!';
+                });
+
+                let incorrect = document.querySelectorAll(".incorrect");
+                for (let i = 0; i < incorrect.length; i++) {
+                    incorrect[i].addEventListener("click", function() {
+                        incorrect[i].style.backgroundColor = "red";
+                        document.querySelector("#result").innerHTML = "Incorrect";
+                    });
+                }
+
+                document.querySelector("#check").addEventListener("click", function() {
+                    let answer = document.querySelector("input");
+                    if (answer.value.includes("0")) {
+                        answer.style.backgroundColor = "green";
+                        document.querySelector("#result").innerHTML = "Correct!";
+                    } else {
+                        answer.style.backgroundColor = "red";
+                        document.querySelector("#result").innerHTML = "Incorrect";
+                    }
+                });
+            });
+        </script>
+    </head>
+
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <h3> What is the derivative of sin(x) at x = 0 ? </h3>
+
+                <button class="correct"> (a) 1 </button>
+                <button class="incorrect"> (b) cos(x) </button>
+                <button class="incorrect"> (c) 0 </button>
+
+                <div id="result"></div>
+
+
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <h3> Area under the curve made by the function f(x) = 2x where x ∈ (-1,1) is </h3>
+                <input>
+
+                <button id="check">Check Answer</button>
+
+                </input>
+                <div id="result"> </div>
+
+
+
+            </div>
+        </div>
+    </body>
+
+</html>
