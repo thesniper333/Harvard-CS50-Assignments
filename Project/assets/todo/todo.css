@@ -1,0 +1,127 @@
+#todo-container {
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */ 
+    
+    height: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.3);  
+    border-radius: 1em; 
+    padding-top: 1em;
+    position: relative;
+    overflow-x: auto; /* hidden horizontal scrolling */
+    
+}
+
+#todo-container input { 
+    width: 80%; 
+    padding-left: 1em;
+    border: none;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.3); /* Semi-transparent background */
+}
+
+#todo-container input:focus {
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: rgb(255, 255, 255);
+}
+
+
+
+#todo-container button#add-task {
+    background: rgba(0, 0, 0, 0.3); /* Semi-transparent background */
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    font-size: 0.8em;
+    padding-top: 0.35em;
+    padding-bottom: 0.35em;
+    padding-left: 1em;
+    padding-right: 1em;
+    transition: 0.3s ease-in-out;
+       
+}
+
+#todo-container button#add-task:hover {
+    background: rgba(255, 255, 255, 0.3); /* Semi-transparent background */
+    color: rgb(0, 0, 0);
+         
+}
+
+#todo-container .remove-btn {
+    font-size: 0.5em;
+    border: none;
+    border-radius: 50px;
+    color: rgb(255, 255, 255);
+    background: rgba(0, 0, 0, 0.3); /* Semi-transparent background */   
+    transition: 0.3s ease-in-out;
+}
+
+#todo-container .remove-btn:hover {
+    background: rgba(255, 255, 255, 0.3); /* Semi-transparent background */
+    color: rgb(0, 0, 0);
+}
+
+
+li { 
+    display: flex; 
+    justify-content: space-between; 
+    margin-top: 0.2em;
+    gap: 0.5em;
+         
+}
+
+li span {
+    text-align: left !important;  /* !important is mentioned to overwrite the text-center class properties of bootstrap to align the text to left, text-center is set with !important property*/
+    background: rgba(0, 0, 0, 0.1); /* Semi-transparent background */
+    width: 100%;
+    padding-left: 1em;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+
+}
+
+li span:hover {
+    color: rgb(255, 255, 255);
+    background: rgba(0, 0, 0, 0.2); /* Semi-transparent background */
+}
+
+
+
+ul { 
+    height: 70%;
+    padding: 0; 
+    bottom: 0;
+    margin-bottom: 0px;
+    width: 100%;
+    overflow-y: hidden; /* hidden vertical scrolling */
+    
+    
+    padding: 5px;
+    position: absolute;
+
+    
+    
+}
+
+ul:hover {
+    overflow-y: auto; /* Enables vertical scrollbar on hover */
+    overflow-x: auto; /* Hides horizontal scrollbar */
+
+}
+
+/* 🔹 Custom Scrollbar Styling (For WebKit Browsers like Chrome, Edge) */
+ul::-webkit-scrollbar {
+    width: 8px; /* Width of scrollbar */
+}
+
+ul::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Light gray background */
+    border-radius: 10px; /* Rounded edges */
+}
+
+ul::-webkit-scrollbar-thumb {
+    background: #888; /* Darker scrollbar color */
+    border-radius: 10px; /* Rounded scrollbar */
+}
+
+ul::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Darker on hover */
+}

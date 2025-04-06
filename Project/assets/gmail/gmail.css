@@ -1,0 +1,160 @@
+#gmail-widget {
+    
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Adjust height as needed */
+    width: 100%;
+    overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, 0.3);  
+    border-radius: 1em; 
+    
+}
+
+#email-list {
+
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;    
+    padding-right: 2em;
+    padding-left: 1em;
+    overflow-y: hidden; /* Enables vertical scrolling */
+    overflow-x: hidden; /* Hides horizontal scrollbar */
+    
+}
+
+
+#email-list:hover {
+    overflow-y: auto; /* Enables vertical scrollbar on hover */
+    overflow-x: auto; /* Hides horizontal scrollbar */
+
+}
+
+/* 🔹 Custom Scrollbar Styling (For WebKit Browsers like Chrome, Edge) */
+#email-list::-webkit-scrollbar {
+    width: 0.5em; /* Width of scrollbar */
+    
+}
+
+#email-list::-webkit-scrollbar-track {
+    background: #ffffff; /* Light gray background */
+    border-radius: 10px; /* Rounded edges */
+}
+
+#email-list::-webkit-scrollbar-thumb {
+    background: #888; /* Darker scrollbar color */
+    border-radius: 10px; /* Rounded scrollbar */
+}
+
+#email-list::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Darker on hover */
+}
+
+
+
+.email {
+    
+    background: rgba(0, 0, 0, 0.1); /* Semi-transparent background */
+    margin-top: 0.5em;
+    border-radius: 5px; 
+    transition: 0.3s ease-in-out;
+    padding: 0.5em;
+  
+}
+
+.email-link {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.email-left {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Space between blinking circle and sender */
+}
+
+.blinking-circle {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: red;
+    animation: breathe 1.5s infinite ease-in-out;
+}
+
+@keyframes breathe {
+    0% { opacity: 0.3; transform: scale(1); }
+    50% { opacity: 1; transform: scale(1.3); }
+    100% { opacity: 0.3; transform: scale(1); }
+}
+
+.email-sender {
+    font-weight: bold;
+    font-size: 0.7em;
+    text-align: left;
+}
+
+.email-right {
+    display: flex;
+    gap: 15px; /* Space between subject and date */
+    align-items: center;
+    justify-content: center; 
+} 
+
+.email-subject {
+     font-size: 0.7em;
+     flex-grow: 1;
+     text-align: left;
+     
+}
+
+.email-date {
+    font-size: 0.7em;
+    color: rgb(0, 0, 0);
+    text-align: right;
+    min-width: 100px;
+}
+
+
+.email:hover {
+    background: rgba(0, 0, 0, 0.2); /* Semi-transparent background */
+    color: #ffffff; ;
+}
+
+.email:hover span.email-date {
+    color: #ffffff;
+}
+
+
+
+
+.element-footer input::placeholder {
+    font-size: 0.6em;   
+}
+
+button#login {
+    font-size: 0.7em;
+    border: none;
+    padding: 0.5em;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.3); /* Semi-transparent background */
+    color: #ffffff;
+    transition: 0.3s ease-in-out;
+    
+}
+button#login:hover {
+    background: rgba(255, 255, 255, 0.3); /* Semi-transparent background */
+    color: #000000;
+    
+}
+
+
+
+
+
+
